@@ -1,0 +1,96 @@
+
+
+
+form { /* Centers form on the page */
+   margin: 0 auto;
+   width: 500px;
+   background-color: #9cbc2c;
+   /* Form outline */
+   margin: 2em;
+   border: 1px solid #CCC;
+   border-radius: .5em;
+   }
+
+   fieldset {  /*remove default border from fieldsets*/
+      border: none;
+   }
+
+   legend {
+      height: 3em; /*space between between legend w h3 and first input*/
+      border: 0;
+      padding: 0;
+   }
+
+   ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   }
+
+   li {
+      background-color: #b9cf6a;
+      border: 2px solid #e2ebc2;
+      border-radius: .5em;
+      padding: .75em;
+      margin-bottom: .25em;
+         
+   }
+
+   label {
+      padding-right: 3.5em; /*space between label & input field*/
+      margin-top: .25em; /*spacing between "card type" and li border*/
+      margin-bottom: 0;
+      padding-top: 0;
+   }
+
+   ::placeholder { /*styles the placeholder text inside the input fields*/
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-style: italic;
+      color: #b3b3b3;
+      padding-left: .5em;
+   }
+
+   input, textarea {
+      height: 2em;
+      border: none;
+      border-radius: .3em;
+   }
+
+   #radio_visa, #radio_amex, #radio_mastercard { /*styles the radio button input fields*/
+      margin-left: 1em;
+      vertical-align: middle;
+   }
+
+   #address { /*aligns the address label text with top of address input field*/
+      vertical-align: text-top;
+   }
+
+  .radio_label { /*center aligns radio buttons with label text*/
+     vertical-align: middle;
+  } 
+
+
+/* Styling for submit button */
+
+   button {
+      height: 50px;
+      width: 150px;
+      border-radius: 25px;
+      background-color: #000000; 
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 1.25em;  
+      color: #ffffff;
+      font-weight: bold;
+      text-align: center;
+      margin-top: .5em;
+      margin-bottom: .75em;
+      margin-left: 33%;
+      
+   }
+
+
+
+
+
+
+
