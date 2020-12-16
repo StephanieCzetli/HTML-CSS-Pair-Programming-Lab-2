@@ -1,96 +1,115 @@
+form {
+  /* Centers form on the page */
+  margin: 0 auto;
+  width: 500px;
+  background-color: #9cbc2c;
+  /* Form outline */
+  margin: 2em;
+  border: 1px solid #ccc;
+  border-radius: 0.5em;
+}
 
+fieldset {
+  /*remove default border from fieldsets*/
+  border: none;
+}
 
+legend {
+  height: 3em; /*space between between legend w h3 and first input*/
+  border: 0;
+  padding: 0;
+}
 
-form { /* Centers form on the page */
-   margin: 0 auto;
-   width: 500px;
-   background-color: #9cbc2c;
-   /* Form outline */
-   margin: 2em;
-   border: 1px solid #CCC;
-   border-radius: .5em;
-   }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-   fieldset {  /*remove default border from fieldsets*/
-      border: none;
-   }
+li {
+  background-color: #b9cf6a;
+  border: 2px solid #e2ebc2;
+  border-radius: 0.5em;
+  padding: 0.75em;
+  margin-bottom: 0.25em;
+}
 
-   legend {
-      height: 3em; /*space between between legend w h3 and first input*/
-      border: 0;
-      padding: 0;
-   }
+label {
+  /*space between label & input field*/
+  margin-top: 0.25em; /*spacing between "card type" and li border*/
+  margin-bottom: 0;
+  padding-top: 0;
+}
 
-   ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-   }
+::placeholder {
+  /*styles the placeholder text inside the input fields*/
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-style: italic;
+  color: #b3b3b3;
+  padding-left: 0.5em;
+}
 
-   li {
-      background-color: #b9cf6a;
-      border: 2px solid #e2ebc2;
-      border-radius: .5em;
-      padding: .75em;
-      margin-bottom: .25em;
-         
-   }
+input,
+textarea {
+  height: 2em;
+  border: none;
+  border-radius: 0.3em;
+}
 
-   label {
-      padding-right: 3.5em; /*space between label & input field*/
-      margin-top: .25em; /*spacing between "card type" and li border*/
-      margin-bottom: 0;
-      padding-top: 0;
-   }
+#radio_visa,
+#radio_amex,
+#radio_mastercard {
+  /*styles the radio button input fields*/
+  margin-left: 1em;
+  vertical-align: middle;
+}
 
-   ::placeholder { /*styles the placeholder text inside the input fields*/
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-style: italic;
-      color: #b3b3b3;
-      padding-left: .5em;
-   }
+#address {
+  /*aligns the address label text with top of address input field*/
+  vertical-align: text-top;
+}
 
-   input, textarea {
-      height: 2em;
-      border: none;
-      border-radius: .3em;
-   }
-
-   #radio_visa, #radio_amex, #radio_mastercard { /*styles the radio button input fields*/
-      margin-left: 1em;
-      vertical-align: middle;
-   }
-
-   #address { /*aligns the address label text with top of address input field*/
-      vertical-align: text-top;
-   }
-
-  .radio_label { /*center aligns radio buttons with label text*/
-     vertical-align: middle;
-  } 
-
+.radio_label {
+  /*center aligns radio buttons with label text*/
+  vertical-align: middle;
+}
 
 /* Styling for submit button */
 
-   button {
-      height: 50px;
-      width: 150px;
-      border-radius: 25px;
-      background-color: #000000; 
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      font-size: 1.25em;  
-      color: #ffffff;
-      font-weight: bold;
-      text-align: center;
-      margin-top: .5em;
-      margin-bottom: .75em;
-      margin-left: 33%;
-      
-   }
+button {
+  height: 50px;
+  width: 150px;
+  border-radius: 25px;
+  background-color: #000000;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.25em;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
+  margin-left: 33%;
+}
 
+label {
+  display: inline-block;
+  width: 75px;
+}
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="tel"],
+textarea {
+  display: block;
+  margin: auto;
+  width: 50%;
+}
 
+li {
+  display: flex;
+  justify-content: flex-start;
+}
 
-
-
-
-
+.card-select label:first-child {
+  margin-bottom: 2rem;
+}
